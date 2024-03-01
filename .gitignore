@@ -1,0 +1,32 @@
+# Ignorar todos os arquivos, exceto os de código-fonte
+
+# Ignorar todos os arquivos e diretórios, exceto os de código-fonte
+*
+!*/
+
+# Ignorar arquivos e diretórios de código de compilação
+*.o
+*.out
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de backup
+*~
+
+# Ignorar arquivos temporários
+.tmp
+.temp
+
+/out/*.*
+/build/*.*
+# Default ignored files
+/shelf/
+/workspace.xml
+
+.DS_Store
