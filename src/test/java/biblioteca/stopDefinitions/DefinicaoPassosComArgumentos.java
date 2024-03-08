@@ -1,7 +1,7 @@
 package biblioteca.stopDefinitions;
 
 import biblioteca.model.entity.Livro;
-import biblioteca.service.ServicoDeBiblioteca;
+import biblioteca.service.BibliotecaService;
 import biblioteca.Topico;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.DocStringType;
@@ -45,13 +45,13 @@ public class DefinicaoPassosComArgumentos {
 
     @E("a seguinte tabela de livros:")
     public void aSeguinteTabelaDeLivros(List<Livro> livros) {
-        final ServicoDeBiblioteca biblioteca = ContextoDeTeste.INSTANCIA.biblioteca();
+        final BibliotecaService biblioteca = ContextoDeTeste.INSTANCIA.biblioteca();
         livros.forEach(livro -> biblioteca.adiciona(livro));
     }
 
     @E("a seguinte lista de livros:")
     public void aSeguinteListaDeLivros(List<Livro> livros) {
-        final ServicoDeBiblioteca biblioteca = ContextoDeTeste.INSTANCIA.biblioteca();
+        final BibliotecaService biblioteca = ContextoDeTeste.INSTANCIA.biblioteca();
         livros.forEach(livro -> biblioteca.adiciona(livro));
     }
 

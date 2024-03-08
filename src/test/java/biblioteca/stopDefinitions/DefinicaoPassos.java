@@ -1,7 +1,7 @@
 package biblioteca.stopDefinitions;
 
 import biblioteca.model.entity.Livro;
-import biblioteca.service.ServicoDeBiblioteca;
+import biblioteca.service.BibliotecaService;
 import biblioteca.Topico;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
@@ -24,7 +24,7 @@ public class DefinicaoPassos {
 
     private Livro livro;
     private Optional<Topico> topico;
-    private ServicoDeBiblioteca biblioteca;
+    private BibliotecaService biblioteca;
 
     @Dado("Que a minha biblioteca esta inicializada")
     public void queAMinhaBibliotecaEstaInicializada() {

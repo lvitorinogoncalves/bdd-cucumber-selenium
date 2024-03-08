@@ -1,19 +1,19 @@
 package biblioteca.stopDefinitions;
 
-import biblioteca.service.ServicoDeBiblioteca;
+import biblioteca.service.BibliotecaService;
 
 public final class ContextoDeTeste {
 
     public static final ContextoDeTeste INSTANCIA = new ContextoDeTeste();
 
-    private ServicoDeBiblioteca biblioteca;
+    private BibliotecaService biblioteca;
 
-    public ServicoDeBiblioteca obtemServico(boolean carrega) {
-        biblioteca = ServicoDeBiblioteca.obtemServico(carrega);
+    public BibliotecaService obtemServico(boolean carrega) {
+        biblioteca = BibliotecaService.obtemServico(carrega);
         return biblioteca;
     }
 
-    public ServicoDeBiblioteca biblioteca() {
+    public BibliotecaService biblioteca() {
         return biblioteca;
     }
 

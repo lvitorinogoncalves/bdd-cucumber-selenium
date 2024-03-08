@@ -26,6 +26,7 @@ public class LivroDAO {
     public static void main(String[] args) {
         final LivroDAO livroDAO = new LivroDAO();
         livroDAO.carregaBiblioteca(DEFAULT_PATH);
+        System.out.println("App iniciado");
     }
     public List<Livro> obtemListaDeLivrosComputacaoOrganizadaPorTitulo() {
         return biblioteca.stream()
